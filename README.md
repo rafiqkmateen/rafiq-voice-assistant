@@ -66,3 +66,5 @@ The source code is private. If you would like to review it, contact me and I wil
 Khadijah began from Julian Ivanov's open-source jarvis-voice-assistant template and was rebuilt from there into what you see here.
 
 © 2026 Rafiq Mateen. All rights reserved.
+
+<!-- 4a-fingerprint: e2b67306110b8e9a -->
