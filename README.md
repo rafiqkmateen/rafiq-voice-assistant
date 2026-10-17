@@ -15,7 +15,7 @@ You talk to her, or type to her. She thinks with Claude, answers out loud in her
 |---|---|
 | **Voice** | Hands-free conversation; replies spoken in a voice cloned on-device with F5-TTS (ElevenLabs as the switch-back); never hears herself; Escape stops her mid-sentence |
 | **Brains** | Claude Haiku by default, Sonnet or Gemini by voice; hard questions move to Sonnet on their own, with an hourly cap; falls back gracefully when a model fails |
-| **The dashboard** | A three.js scene: her globe shows her name, state and model; four coloured satellites carry the nodes, and each node opens its own card |
+| **The dashboard** | A three.js scene: her globe shows her name, state and model; five coloured satellites carry the nodes, and each node opens its own card |
 | **Money, read-only** | Interactive Brokers and Webull balances and positions as reports, graded from strong to critical. Nothing can ever place a trade, and an automated check enforces it |
 | **Local life** | Weather in °F, currency outlook and local alerts; films showing nearby with posters and English synopses; five pro teams' scores and standings |
 | **WhatsApp** | Incoming messages appear as cards you can answer from the page; a morning brief arrives on the phone at 7 AM |
@@ -25,7 +25,7 @@ You talk to her, or type to her. She thinks with Claude, answers out loud in her
 
 ## A look around
 
-**Standing by.** Calendar and tasks top left, her globe beside them, the machine readout at the top, and the four satellites of nodes.
+**Standing by.** Calendar and tasks top left, her globe beside them, the machine readout at the top, and the five satellites of nodes.
 
 ![Khadijah standing by](images/khadijah-standby.png)
 
@@ -67,4 +67,4 @@ Khadijah began from Julian Ivanov's open-source jarvis-voice-assistant template 
 
 © 2026 Rafiq Mateen. All rights reserved.
 
-<!-- 4a-fingerprint: e2b67306110b8e9a -->
+<!-- 4a-fingerprint: ce9d586178024c0f -->
