@@ -3,7 +3,7 @@
 **A personal AI voice assistant with a 3D holographic dashboard, built and run on one Windows PC.**
 Designed and built by **Rafiq Mateen**, AI creator.
 
-![Khadijah talking, with the server card open](images/khadijah-talking.png)
+![Khadijah talking, mid-reply](images/khadijah-talking.png)
 
 You talk to her, or type to her. She thinks with Claude, answers out loud in her own voice, which is cloned on the PC itself from a short recording, and runs a live dashboard around her: calendar and tasks, brokerage reports, local news and weather, sports, cinema listings, the machine's own health, the devices on the Wi-Fi, WhatsApp, and DaVinci Resolve video builds. Everything runs locally; nothing listens on the network.
 
