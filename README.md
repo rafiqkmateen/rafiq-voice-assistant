@@ -20,7 +20,8 @@ You talk to her, or type to her. She thinks with Claude, answers out loud in her
 | **Local life** | Weather in °F, currency outlook and local alerts; films showing nearby with posters and English synopses; five pro teams' scores and standings |
 | **WhatsApp** | Incoming messages appear as cards you can answer from the page; a morning brief arrives on the phone at 7 AM |
 | **The machine** | Live CPU, memory, GPU and disk readout; a disk auditor with a preview-first junk cleaner; a Wi-Fi map that flags unknown devices |
-| **Creative tools** | Builds and renders a 4K DaVinci Resolve timeline from a folder of clips; a "Great Debate" where two AI voices argue a plan until they agree |
+| **Creative tools** | Plans drone missions on a map, imports the footage with a confirm step and sorts it by mission; builds and renders a 4K DaVinci Resolve timeline from it |
+| **Market research** | Tears down any website in a hidden Chrome tab: its tech stack, a rebuild recipe, and what the evidence can't show; a local LLM for day-to-day questions at no ongoing SaaS cost; a "Great Debate" where two AI voices argue a plan until they agree |
 | **Web and screen** | Web search with a spoken summary (Tavily, falling back to DuckDuckGo); looks at the screen and describes it |
 
 ## A look around
@@ -48,7 +49,7 @@ You talk to her, or type to her. She thinks with Claude, answers out loud in her
 | Models | Anthropic API (Claude Haiku and Sonnet), Google Gemini, with routing, fallbacks and rate limits |
 | Voice | F5-TTS running on the graphics card in its own Python environment; ElevenLabs as the alternative |
 | WhatsApp | A Node.js bridge on Baileys, supervised and restarted by the server |
-| Data | Broker interfaces (read-only), ESPN, weather and currency feeds, cinema sites read through a hidden Chrome |
+| Data | Broker interfaces (read-only), ESPN, weather and currency feeds, cinema sites and any site Reverse Engineer tears down, read through a hidden Chrome |
 
 **Engineering choices worth a look**
 
