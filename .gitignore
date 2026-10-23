@@ -1,0 +1,22 @@
+# What this file does: keeps private things out of this public showcase repository.
+#
+# It works the opposite way round from a normal ignore file. Instead of naming the
+# things to keep out, it keeps EVERYTHING out and then lets back in only the handful
+# of files this showcase is actually for. So anything new that ever lands in this
+# folder -- a note, a config file, a key, a screenshot taken by accident -- stays on
+# the laptop by default, even if you run "git add ." without looking at what it is.
+#
+# To publish something new here, add a line for it below. Nothing else gets out.
+
+# Keep everything out.
+*
+
+# Let back in only the showcase itself.
+!.gitignore
+!README.md
+!LICENSE
+
+# ...and the pictures. The folder has to be let in first, then the pictures inside it.
+# Anything in that folder which is not a .png stays out.
+!images/
+!images/*.png

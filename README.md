@@ -15,9 +15,10 @@ You talk to her, or type to her. She thinks with Claude, answers out loud in her
 |---|---|
 | **Voice** | Hands-free conversation; replies spoken in a voice cloned on-device with F5-TTS (ElevenLabs as the switch-back); never hears herself; Escape stops her mid-sentence |
 | **Brains** | Claude Haiku by default, Sonnet or Gemini by voice; hard questions move to Sonnet on their own, with an hourly cap; falls back gracefully when a model fails |
-| **The dashboard** | A three.js scene: her globe shows her name, state and model; five groups of nodes fly across a sunset sky, each node a small craft with its logo and a word, and each one opens its own card |
+| **The dashboard** | A three.js scene: her globe shows her name, state and model; the nodes are gathered into groups around her, each node carrying its name as a word, and each node opens its own card |
+| **The craft** | Every group flies a craft of its own behind its nodes — a reaper drone over the Cartagena group, a solar glider, an airship, a subsonic jet, a satellite, a relay tower, a clearer drone — and they fly freely rather than along fixed lanes |
 | **Money, read-only** | Interactive Brokers and Webull balances and positions as reports, graded from strong to critical. Nothing can ever place a trade, and an automated check enforces it |
-| **Local life** | Weather in °F, currency outlook and local alerts; films showing nearby with posters and English synopses; five pro teams' scores and standings |
+| **Local life** | Weather in °F, currency outlook and local alerts; the Cartagena news card draws the dollar's recent trend as a line chart, oldest rate at the left, newest at the right, with the span of days beside it; films showing nearby with posters and English synopses; five pro teams' scores and standings |
 | **WhatsApp** | Incoming messages appear as cards you can answer from the page; a morning brief arrives on the phone at 7 AM |
 | **The machine** | Live CPU, memory, GPU and disk readout; a disk auditor with a preview-first junk cleaner; a Wi-Fi map that flags unknown devices |
 | **Creative tools** | Plans drone missions on a map, imports the footage with a confirm step and sorts it by mission; builds and renders a 4K DaVinci Resolve timeline from it |
@@ -26,7 +27,9 @@ You talk to her, or type to her. She thinks with Claude, answers out loud in her
 
 ## A look around
 
-**Standing by.** Calendar and tasks top left, her globe beside them, the machine readout at the top, and the nodes drifting across the sky.
+The display has settled into its final form: every node carries its name as a word, with its group's craft still visible behind it, and the craft fly freely instead of following fixed lanes. Because some craft read as a shapeless blob side-on at a node's size, a single node's craft can be turned to face a heading of its own without moving the others that share it, and a single node's word can be shrunk so the craft shows through behind the longest names.
+
+**Standing by.** Calendar and tasks top left, her globe beside them, the machine readout at the top, and the groups of nodes.
 
 ![Khadijah standing by](images/khadijah-standby.png)
 
@@ -55,7 +58,8 @@ You talk to her, or type to her. She thinks with Claude, answers out loud in her
 
 - **Local-only by design.** Every service binds to 127.0.0.1; the server checks Host and Origin on every request and on the WebSocket, and sends a strict Content Security Policy.
 - **Read-only money, enforced by code.** Broker access is limited to account reads, and a checker scans the code for any order-placing call.
-- **Documentation tested against the code.** A script checks the 4,400-line guide against the real files, names and load order, so the docs cannot drift.
+- **A tripwire on its own files.** A watchdog keeps a cryptographic fingerprint of the project's real working files — leaving out the ones that are generated, downloaded or copied by design — and re-checks them every twenty seconds, logging each change. If a file's content ever goes back to something it held earlier — the signature of a silent revert — it raises an alert on the desktop with a beep. It also reports anything that changed while it was not running.
+- **Documentation tested against the code.** A script checks the guide against the real files, names and load order, so the docs cannot drift.
 - **Built with AI, engineered like software.** Developed with Claude Code under written working rules: backups before every change, byte-verified writes, one commit per session.
 
 ## The code
@@ -68,4 +72,4 @@ Khadijah began from Julian Ivanov's open-source jarvis-voice-assistant template 
 
 © 2026 Rafiq Mateen. All rights reserved.
 
-<!-- 4a-fingerprint: e59323084c9f7102 -->
+<!-- 4a-fingerprint: 62f521d199a4e5fb -->
