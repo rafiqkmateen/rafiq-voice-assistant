@@ -17,7 +17,7 @@ You talk to her, or type to her. She thinks with Claude, answers out loud in her
 |---|---|
 | **Voice** | Hands-free conversation; replies spoken in a voice cloned on-device with F5-TTS (ElevenLabs as the switch-back); never hears herself; Escape stops her mid-sentence; say "open Calendar" or "go to Tasks" and the screen goes there; click a menu section and she says one short line about it (a Narrate switch turns that off) |
 | **Brains** | Claude Haiku by default, Sonnet or Gemini by voice; hard questions move to Sonnet on their own, with an hourly cap; falls back gracefully when a model fails |
-| **The dashboard** | A window of sections: a menu down the left, a stage in the middle, a panel on the right with her globe (name, state, model) and a dock along the bottom. Home shows glowing rings, one per group, with each group's node logos riding its ring; every node opens its own card on the stage; a Claude plan-limit card shows usage and spend, and its node wears an amber halo when the session or the week is at 90 percent |
+| **The dashboard** | A window of sections: a menu down the left, a stage in the middle, a panel on the right with her globe (name, state, model) and a dock along the bottom. Home shows glowing rings, one per group, with each group's node logos riding its ring; every node opens its own card on the stage; a Claude plan-limit card shows usage and spend, and its node wears a red halo, and the menu shows the percentage blinking in red, when the session or the week is at 90 percent |
 | **Calendar and tasks** | Your Google Calendar month on screen: click a day to add an event, click an event to change or delete it, and it is saved straight to Google. Tasks are ticked, added, edited and deleted by mouse or by voice ("add task buy milk", "undo that") |
 | **Money, read-only** | Interactive Brokers and Webull balances and positions as reports, graded from strong to critical. Nothing can ever place a trade, and an automated check enforces it |
 | **Local life** | Weather in °F, currency outlook and local alerts; the Cartagena news card draws the dollar's recent trend as a line chart, oldest rate at the left, newest at the right, with the span of days beside it; films showing nearby with posters and English synopses; five pro teams' scores and standings |
@@ -90,4 +90,4 @@ Khadijah began from Julian Ivanov's open-source jarvis-voice-assistant template 
 
 © 2026 Rafiq Mateen. All rights reserved.
 
-<!-- 4a-fingerprint: 72c232d7bb76563c -->
+<!-- 4a-fingerprint: d63c3570520d7176 -->
