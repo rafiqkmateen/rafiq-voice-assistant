@@ -19,7 +19,7 @@ You talk to her, or type to her. She thinks with Claude, answers out loud in her
 | **Brains** | Claude Haiku by default, Sonnet or Gemini by voice; hard questions move to Sonnet on their own (model routing), with an hourly cap; falls back gracefully when a model fails |
 | **The dashboard** | A window of sections: a menu down the left, a stage in the middle, a panel on the right with her globe (name, state, model) and a dock along the bottom. Home shows glowing rings, one per group, with each group's node logos riding its ring; every node opens its own card on the stage; a Claude plan-limit card shows usage and spend, and its node wears a red halo, and the menu shows the percentage blinking in red, when the session or the week is at 90 percent |
 | **Calendar and tasks** | Your Google Calendar month on screen: click a day to add an event, click an event to change or delete it, and it is saved straight to Google. Tasks are ticked, added, edited and deleted by mouse or by voice ("add task buy milk", "undo that") |
-| **Money, read-only** | Interactive Brokers and Webull balances and positions as reports, graded from strong to critical. Nothing can ever place a trade, and an automated check enforces it |
+| **Money, read-only** | Interactive Brokers and Webull balances and positions as reports, graded from strong to critical; one click asks a Claude project to pull the live positions, read the news on the movers and write a thesis and a pro's read for each, with the broker access and limits that project's own instructions set. Khadijah's own code never places a trade, and an automated check enforces it |
 | **Local life** | Weather in °F, currency outlook and local alerts; the Cartagena news card draws the dollar's recent trend as a line chart, oldest rate at the left, newest at the right, with the span of days beside it; films showing nearby with posters and English synopses; five pro teams' scores and standings |
 | **WhatsApp** | Every chat on one screen with its own reply box; voice notes are written out as text on the PC, messages show in English and replies go out in the contact's language; a morning brief arrives on the phone at 7 AM |
 | **The machine** | Live CPU, memory, GPU and disk readout; a disk auditor with a preview-first junk cleaner; a Wi-Fi map that flags unknown devices and links to the router to check them; a weekly security check for Node.js and Python packages, which she also runs when asked |
@@ -55,9 +55,9 @@ Home is the first screen: the menu of sections down the left, the groups' nodes 
 
 ![The Google News card](images/khadijah-google-news.png)
 
-**Every part of the screen, labelled in plain words.**
+**Every part of the screen, labeled in plain words.**
 
-![What is on the screen, labelled](images/whats-on-the-screen.png)
+![What is on the screen, labeled](images/whats-on-the-screen.png)
 
 ## How it is built
 
@@ -66,7 +66,7 @@ Home is the first screen: the menu of sections down the left, the groups' nodes 
 | Part | Built with |
 |---|---|
 | Server | Python 3.12, FastAPI, WebSocket; split into routes, services and model clients |
-| Dashboard | Plain JavaScript with no build step, a glass-panel design system, three.js only for the turning sphere of her globe |
+| Dashboard | Plain JavaScript with no build step, a glass-panel design system, three.js only for her globe, a turning glass planet with orbit rings |
 | Models | Anthropic API (Claude Haiku and Sonnet), Google Gemini, with routing, fallbacks and rate limits |
 | Voice | F5-TTS running on the graphics card in its own Python environment; ElevenLabs as the alternative |
 | WhatsApp | A Node.js bridge on Baileys, supervised and restarted by the server |
@@ -90,4 +90,4 @@ Khadijah began from Julian Ivanov's open-source jarvis-voice-assistant template 
 
 © 2026 Rafiq Mateen. All rights reserved.
 
-<!-- 4a-fingerprint: 8edcbdba8c3eaddf -->
+<!-- 4a-fingerprint: d913b62619c4d973 -->
