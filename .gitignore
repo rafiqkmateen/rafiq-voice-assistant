@@ -20,3 +20,7 @@
 # Anything in that folder which is not a .png stays out.
 !images/
 !images/*.png
+
+# ...and the demo video: the folder first, then the .mp4 inside it (GitHub shows it with a player; keep it under 25 MB).
+!video/
+!video/*.mp4
