@@ -21,6 +21,6 @@
 !images/
 !images/*.png
 
-# ...and the demo video: the folder first, then the .mp4 inside it (GitHub shows it with a player; keep it under 25 MB).
+# ...and the demo video: the folder first, then the .mp4 inside it (GitHub's file page does not play a video this big, it only offers View raw or a download).
 !video/
 !video/*.mp4
