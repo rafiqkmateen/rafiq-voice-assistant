@@ -77,7 +77,7 @@ Home is the first screen: the menu of sections down the left, the groups' nodes 
 - **Local-only by design.** Every service binds to 127.0.0.1; the server checks Host and Origin on every request and on the WebSocket, and sends a strict Content Security Policy.
 - **Read-only money, enforced by code.** Broker access is limited to account reads, and a checker scans the code for any order-placing call.
 - **A tripwire on its own files.** A watchdog keeps a cryptographic fingerprint of the project's real working files — leaving out the ones that are generated, downloaded or copied by design — and re-checks them every twenty seconds, logging each change. If a file's content ever goes back to something it held earlier — the signature of a silent revert — it raises an alert on the desktop with a beep. It also reports anything that changed while it was not running.
-- **Documentation tested against the code.** A script checks the guide against the real files, names and load order, so the docs cannot drift.
+- **Documentation tested against the code.** A script checks the guide against the real files, names and load order, so the docs cannot drift; a second script compares the reference tables (settings, configuration keys, data files, folder map) with the code and can rewrite the settings values itself.
 - **Built with AI, engineered like software.** Developed with Claude Code under written working rules: backups before every change, byte-verified writes, one commit per session.
 
 ## The code
@@ -90,4 +90,4 @@ Khadijah began from Julian Ivanov's open-source jarvis-voice-assistant template 
 
 © 2026 Rafiq Mateen. All rights reserved.
 
-<!-- 4a-fingerprint: c287b1fa90677eae -->
+<!-- 4a-fingerprint: 04d134c99da31ea5 -->
